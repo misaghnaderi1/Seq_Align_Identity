@@ -14,4 +14,4 @@ This code contains two functions
     The names of the alignment functions in this module follow the convention <alignment type>XX where <alignment type> is either "global"     or "local" and XX is a 2 character code indicating the parameters it takes. The first character indicates the parameters for matches       (and mismatches), and the second indicates the parameters for gap penalties..." 
                                                                             http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html
                                                                             
-    
+    In the alignment process the Blosum62 matrix is used for scoring and the penalties for opening and extending gaps are set to what falign is using. gap_open = -12, gap_extend = -1.2. 
